@@ -1,0 +1,1 @@
+Files in this repo represent the raw code that accompanies a series of videos for the field of Applied Linguistics that I am making under the guidance of Dr. Payman Vafaee.
