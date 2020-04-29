@@ -1,6 +1,12 @@
 # One-way MANOVA - Import your data ----
 
 # Citations
+# https://gaopinghuang0.github.io/2017/11/20/MANOVA-notes-and-R-code
+# http://www.sthda.com/english/wiki/manova-test-in-r-multivariate-analysis-of-variance
+# https://influentialpoints.com/notes/nbrma1d.htm
+# https://stat.ethz.ch/pipermail/r-help/2010-June/243169.html
+# https://stats.stackexchange.com/questions/33518/pairwise-mahalanobis-distance-in-r
+# https://www.rdocumentation.org/packages/mvnormtest/versions/0.1-9/topics/mshapiro.test
 # http://www.sthda.com/english/wiki/manova-test-in-r-multivariate-analysis-of-variance
 
 # The Data
@@ -24,8 +30,8 @@
 # install.packages("ggplot2")
 # install.packages("pastecs")
 # install.packages("mvnormtest")
-install.packages("assertr")
-install.packages("heplots")
+# install.packages("assertr")
+# install.packages("heplots")
 
 # Load packages
 library(gdata)
@@ -87,9 +93,6 @@ box_plot + geom_boxplot() + labs(x='School Type', y='Speaking/Writing Scores', c
 
 by(manova_data$Speaking_Score, manova_data$School, stat.desc, basic=F)
 by(manova_data$Writing_Score, manova_data$School, stat.desc, basic=F)
-
-# multivariate normality
-?mshapiro.test()
 
 # Running the MANOVA test
 residuals_manova <- manova(cbind(Speaking_Score, Writing_Score) ~ School, 
@@ -190,10 +193,12 @@ summary(post_hocs_writing)
 
 # Effect size
 
-install.packages("lsr")
+#install.packages("lsr")
 library(lsr)
 effect_size_speaking <- etaSquared(speaking_model)
 effect_size_writing <- etaSquared(writing_model)
-effect_size_speaking
-effect_size_writing
-
+#effect_size_manova <- etaSquared(manova_model) #Unknown
+eff_size_speaking <- effect_size_speaking[,1]
+eff_size_writing <- effect_size_writing[,1]
+eff_size_speaking
+eff_size_writing
