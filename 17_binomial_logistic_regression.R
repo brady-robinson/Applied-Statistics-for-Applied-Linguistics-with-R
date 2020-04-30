@@ -2,6 +2,15 @@
 
 # Citations
 
+# https://www.datacamp.com/community/tutorials/logistic-regression-R
+# https://towardsdatascience.com/implementing-binary-logistic-regression-in-r-7d802a9d98fe
+# https://www.wikihow.com/Calculate-Weighted-Average
+# https://www.rdocumentation.org/packages/rcompanion/versions/2.3.25/topics/nagelkerke
+# https://www.rdocumentation.org/packages/ResourceSelection/versions/0.3-5/topics/hoslem.test
+# https://www.r-bloggers.com/evaluating-logistic-regression-models/
+# https://stackoverflow.com/questions/41384075/r-calculate-and-interpret-odds-ratio-in-logistic-regression
+# https://stats.stackexchange.com/questions/5304/why-is-there-a-difference-between-manually-calculating-a-logistic-regression-95/5320#5320
+
 # The Data
 
 # These data are for educational purposes only, and should not inform you opinion about the subject matter.
