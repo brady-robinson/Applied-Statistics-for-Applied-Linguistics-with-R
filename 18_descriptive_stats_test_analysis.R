@@ -2,6 +2,10 @@
 
 # Citations
 
+# https://www.rdocumentation.org/packages/DescTools/versions/0.99.34/topics/Mode
+# http://math.furman.edu/~dcs/courses/math47/R/library/fBasics/html/015A-BasicStatistics.html
+# https://www.researchgate.net/post/Different_result_of_skewness_and_kurtosis-any_thoughts
+# https://www.datacamp.com/community/tutorials/make-histogram-basic-r
 
 # The Data
 
