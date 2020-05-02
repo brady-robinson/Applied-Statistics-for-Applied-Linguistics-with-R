@@ -28,5 +28,3 @@ cron_alpha <- CronbachAlpha(test_data[,5:19])
 st_dev <- basicStats(test_data$total_multiple_choice)[14,]
 # standard_error_measurement = Standard_deviation*sqrt(1 - Cronbach's_alpha)
 standard_error_measurement = st_dev*sqrt(1 - cron_alpha)
-
-
