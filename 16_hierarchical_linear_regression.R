@@ -13,11 +13,15 @@
 
 # These data are for educational purposes only, and should not inform you opinion about the subject matter.
 
-# 
+# Our research question today: Can we "predict" a speaking score in learners of English? Imagine that we recruited 100
+# participants to perform a speaking test. We test recorded their age, anxiety levels, average study time, and 
+# whether or not they lived in an English speaking country for any amount of time. We are interested in whether the 
+# addition of anxiety level and then study time obtained before the test improved the prediction of speaking scores
+# over and above age and whether or not participants had lived in an English speaking country. Remember that this scenario 
+# and are not real, and are for educational purposes.
 
 # Install/load packages
 
-# install.packages("MASS")
 library(gdata)
 library(ggplot2)
 library(dplyr)

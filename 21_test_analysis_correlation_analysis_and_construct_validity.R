@@ -28,6 +28,6 @@ rcorr(as.matrix(test_data[,45:49]), type = c("spearman"))
 
 # Correlation analysis between total scores of each section
 
-rcorr(as.matrix(cbind(test_data$total_multiple_choice,
+rcorr(as.matrix(cbind(test_data$total.multiple.choice,
                       test_data$speaking_average)),
       type = c("pearson"))

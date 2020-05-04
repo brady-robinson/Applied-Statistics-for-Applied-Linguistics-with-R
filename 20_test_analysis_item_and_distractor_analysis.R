@@ -1,4 +1,4 @@
-# Descriptive statistics test analysis - Import your data ----
+# Item analysis and distractor analysis - test analysis - Import your data ----
 
 # Citations
 
@@ -11,8 +11,6 @@
 # 
 
 # Install/load packages
-
-install.packages("CTT")
 
 library(gdata)
 library(psych)

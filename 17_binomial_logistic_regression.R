@@ -15,14 +15,13 @@
 
 # These data are for educational purposes only, and should not inform you opinion about the subject matter.
 
-# 
+# We would like to use binomial logistic regression to predict whether ESL students will pass or fail an exam based on the amount 
+# of time they spent studying, whether or not they lived in an English speaking country at any point in their life,
+# their speaking score on a previous test, and their age. Remember this scenario and data are made up for the purpose
+# of this video.
 
 # Install/load packages
 
-install.packages("MASS")
-install.packages("rcompanion")
-install.packages("ResourceSelection")
-install.packages("survey")
 library(gdata)
 library(ggplot2)
 library(dplyr)

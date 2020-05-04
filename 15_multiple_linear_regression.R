@@ -19,7 +19,6 @@
 
 # Install/load packages
 
-install.packages("MASS")
 library(gdata)
 library(ggplot2)
 library(dplyr)
@@ -81,7 +80,7 @@ qqPlot(regression_model$residuals)
 sresid <- studres(regression_model)
 predicted_values <- predict(regression_model)
 frame_for_plot <- as.data.frame(cbind(sresid, predicted_values))
-ggplot(frame_for_plot, aes(sresid, predicted_values)) + geom_point()
+ggplot(frame_for_plot, aes(sresid, predicted_values)) + geom_point() # Homoscedasticity
 
 # Linearity
 # (each independent variable is linearly related to the dependent variable)
@@ -96,7 +95,3 @@ avPlot(regression_model, variable = "lived_eng")
 
 vif(regression_model)
 summary(regression_model)
-
-# Homoscedasticity
-
-ggplot(frame_for_plot, aes(sresid, predicted_values)) + geom_point()

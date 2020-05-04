@@ -51,21 +51,11 @@ regression_data
 ggplot(regression_data, aes(study_time, speaking_score)) + geom_point()
 ggplot(regression_data, aes(study_time, speaking_score)) + geom_point() + stat_smooth(method = lm, se = FALSE)
 
-# Outlier test
-
-outlierTest(regression_model)
-
-# Scatterplot without outlier
-
-ggplot(regression_data, aes(study_time, speaking_score)) + geom_point()
-ggplot(regression_data, aes(study_time, speaking_score)) + geom_point() + stat_smooth(method = lm, se = FALSE)
-
 # Regression
 
 regression_model <- lm(speaking_score ~ study_time, data = regression_data)
 summary(regression_model)
 regression_model
-regression_model$residuals
 
 # Outlier test
 
@@ -75,6 +65,11 @@ outlierTest(regression_model)
 
 regression_data <- regression_data[-c(91),]
 regression_data
+
+# Scatterplot without outlier
+
+ggplot(regression_data, aes(study_time, speaking_score)) + geom_point()
+ggplot(regression_data, aes(study_time, speaking_score)) + geom_point() + stat_smooth(method = lm, se = FALSE)
 
 # Regression (repeated without outlier)
 
@@ -87,7 +82,7 @@ regression_model$residuals
 
 durbinWatsonTest(regression_model)
 
-# Scatterplot predicted versus residuals
+# Scatterplot predicted versus residuals - homoscedasticity
 
 predicted_values <- predict(regression_model)
 residual_values <- regression_model$residuals
