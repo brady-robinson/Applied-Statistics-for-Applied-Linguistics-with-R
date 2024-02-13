@@ -1,6 +1,6 @@
 # Appled Statistics for Applied Linguistics with R
 
-The videos and code begins with R fundamentals and proceeds through inferential statistics and classical test theory. Files in this repo represent the raw code that accompanies a series of how-to videos for doing applied statistics in R with Applied Linguistics examples. I worked on this project with Dr. Payman Vafaee at Columbia.
+This course's video and code begin with R fundamentals and proceeds through inferential statistics and classical test theory. Files in this repo represent the raw code that accompanies a series of how-to videos for doing applied statistics in R with Applied Linguistics examples. I worked on this project with Dr. Payman Vafaee at Columbia.
 
 ## Youtube Tutorials
 
